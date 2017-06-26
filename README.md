@@ -10,6 +10,19 @@ The idea is to "split the earth" in small squares in order to get discrete data 
 The points are not centered inside the squares since the algorithm starts from (-90, -180) __included__ and goes until (90, 180) __excluded__.
 In that case the points are placed in the left-bottom corner.
 
+### To illustrate
+Here is an illustration using a step equals to 60 degrees:
+
+```
+             ___________________ (30, 120)
+             |. |. |. |. |. |. |
+             ⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻
+             |. |. |. |. |. |. |
+             ⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻
+             |. |. |. |. |. |. |
+(-90, -180)  ⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻
+```
+
 ### The step
 The step is granulary in degrees used to split the earth. Lower is the step better the accuracy is, but it more points you get: 
 - 0.1 is about 11.1km
@@ -22,16 +35,3 @@ for a step equals to 0.05deg:
 - 5km
 - 25'920'000 points
 - csv size 344MB
-
-## To illustrate
-Here is an illustration using a step equals to 60 degrees:
-
-```
-             ___________________ (30, 120)
-             |. |. |. |. |. |. |
-             ⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻
-             |. |. |. |. |. |. |
-             ⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻
-             |. |. |. |. |. |. |
-(-90, -180)  ⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻
-```
