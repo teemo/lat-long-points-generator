@@ -24,17 +24,17 @@ Here is an illustration using a step equals to 60 degrees:
 ```
 
 ### The step
-The step is granulary in degrees used to split the earth. Lower is the step better the accuracy is, but it more points you get: 
+The step is the granularity parameter in degrees used to split the earth. Lower is the step better the accuracy is, but more points you get: 
 - 0.1 is about 11.1km
 - 0.01 is about 1.11km
 - 0.001 is about 110m
 - 0.0001 is about 11m
-> Of the course these figures are approximated since it depends where the points are taken on the earth. if your goal is to have a regular step in meters then this generator won't be adapted.
+> Of the course these figures are approximated since it depends on where the points are taken on the earth. if your goal is to have a regular step in meters then this generator is not adapted.
 
 for a step equals to 0.05deg:
 - 5km
 - 25'920'000 points
-- csv size 344MB
+- csv size 566.3MB
 
 ##  How to use
 ```bash
@@ -50,14 +50,15 @@ $ ./lat-long-points-generator.py 0.8
 tail array_index.csv   
 ```
 ```
-89.95,179.5
-89.95,179.55
-89.95,179.6
-89.95,179.65
-89.95,179.7
-89.95,179.75
-89.95,179.8
-89.95,179.85
-89.95,179.9
-89.95,179.95
+89.95,179.5,25919990
+89.95,179.55,25919991
+89.95,179.6,25919992
+89.95,179.65,25919993
+89.95,179.7,25919994
+89.95,179.75,25919995
+89.95,179.8,25919996
+89.95,179.85,25919997
+89.95,179.9,25919998
+89.95,179.95,25919999
 ```
+> latitude, longitude, index 
