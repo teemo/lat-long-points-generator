@@ -35,3 +35,29 @@ for a step equals to 0.05deg:
 - 5km
 - 25'920'000 points
 - csv size 344MB
+
+##  How to use
+```bash
+$ chmod +x lat-long-points-generator.py
+
+# executes with default step
+$ ./lat-long-points-generator.py
+
+# executes for a given step
+$ ./lat-long-points-generator.py 0.8
+
+# quick check on the result
+tail array_index.csv   
+```
+```
+89.95,179.5
+89.95,179.55
+89.95,179.6
+89.95,179.65
+89.95,179.7
+89.95,179.75
+89.95,179.8
+89.95,179.85
+89.95,179.9
+89.95,179.95
+```
