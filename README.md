@@ -40,7 +40,7 @@ for a step equals to 0.05deg:
 ```bash
 $ chmod +x lat-long-points-generator.py
 
-# executes with default step
+# executes with default step 0.05
 $ ./lat-long-points-generator.py
 
 # executes for a given step
