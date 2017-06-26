@@ -39,7 +39,10 @@ for i_lat in range(nb_points_lat):
         # round(,2) is used to correct the float approximation in python. It also reduces the file size. 
         latitude = round(i_lat * step + LAT_MIN, 2)
         longitude = round(i_long * step + LONG_MIN, 2)
-        output_writer.writerow([latitude, longitude])
+        # generate a unique index for the tuple (latitude,longitude)
+        # the index is used when batch processing the csv to reorder the results
+        index_arr = i_long + (i_lat * nb_points_long)
+        output_writer.writerow([latitude, longitude, index_arr])
 
 output_file.close()
 print('Ending. The result is saved in this file: ' + file_name)
