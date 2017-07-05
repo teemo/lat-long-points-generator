@@ -6,7 +6,7 @@ The resulting points are writen in a csv file.
 ## In details
 
 ### The idea
-The idea is to "split the earth" in small squares in order to get discrete data which is faster to process (at a certain limit).
+The idea is to "split the earth" in small squares in order to get discrete data which is faster to process until a certain limit.
 The points are not centered inside the squares since the algorithm starts from (-90, -180) __included__ and goes until (90, 180) __excluded__.
 In that case the points are placed in the left-bottom corner.
 
