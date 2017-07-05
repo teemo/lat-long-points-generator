@@ -1,14 +1,14 @@
 # lat-long-points-generator
 ## General
-Simple script that generates regularly points (latitude, longitude) that covers the earth according to a given step (eg 5km).
+Simple script that generates regularly points (latitude, longitude) that covers the earth according to a given step in degree.
 The resulting points are writen in a csv file.
 
 ## In details
 
 ### The idea
-The idea is to "split the earth" in small squares in order to get discrete data which is faster to process until a certain limit.
+The idea is to "split the earth" in small squares, in order to get discrete data which is faster to process until a certain limit.
 The points are not centered inside the squares since the algorithm starts from (-90, -180) __included__ and goes until (90, 180) __excluded__.
-In that case the points are placed in the left-bottom corner.
+In that case, the points are placed in the left-bottom corner.
 
 ### To illustrate
 Here is an illustration using a step equals to 60 degrees:
